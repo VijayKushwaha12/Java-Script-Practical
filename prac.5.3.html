@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Animal{
+            constructor(species,sound){
+                this.species=species;
+                this.sound=sound;
+            }
+            makeSound(){
+                document.write("sound :"+this.sound+"<br>");
+            }
+        }
+        class Dog extends Animal{
+            constructor(species,sound,color){
+                super(species,sound);
+                this.color=color;
+            }
+            makeSound(){
+                super.makeSound();
+                document.write("Color:"+this.color+"<br>");
+            }
+        }
+        var dog=new Dog('Dog',' bhu bhu','Black');
+        dog.makeSound();
+    </script>
+</body>
+</html>

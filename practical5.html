@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class University
+        {
+            constructor( name,department)
+            {
+                this.name=name;
+                this.department=department;
+                document.write(this.name+this.department+"<br>");
+            }
+            add(dep){
+                this.department=this.department+dep;
+                document.write("no of dep"+this.department+dep+"<br>");
+            }
+            remove(dep){
+                this.department=this.department-dep;
+                document.write(this.department);
+            }
+            
+        }
+        var e=new University("Ganpat University" ,"C.E,I.T,Marine,Civil");
+        e.add(electrical);
+        e.remove(Civil);
+
+    </script>
+</body>
+</html>
